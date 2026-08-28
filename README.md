@@ -2,16 +2,18 @@
 
 ### Intelligent Data Cleaning & Analysis Platform
 
-InsightOS is a web-based data cleaning platform designed to help users upload CSV datasets, identify common data quality problems, apply cleaning operations, and download a cleaned dataset.
+> 🚧 **Project Status: In Progress**
 
-The platform provides an easy-to-use interface for performing essential data preprocessing tasks without requiring users to manually edit their datasets.
+InsightOS is a web-based data cleaning and analysis platform designed to help users upload datasets, identify common data quality issues, apply cleaning operations, and download cleaned data.
 
-## Features
+The project is currently under development, with additional features and improvements being added.
+
+## Current Features
 
 ### 📁 CSV Dataset Upload
 
-* Upload CSV files through the interface.
-* Drag-and-drop dataset upload.
+* Upload CSV datasets.
+* Drag-and-drop file upload.
 * Automatically detects rows and columns.
 * Displays the uploaded dataset in a table.
 
@@ -20,7 +22,7 @@ The platform provides an easy-to-use interface for performing essential data pre
 * Detects repeated complete rows.
 * Displays duplicate row numbers.
 * Shows unique and duplicate row counts.
-* Allows users to remove duplicate rows.
+* Allows duplicate rows to be removed.
 
 ### ↔️ Space Cleaning
 
@@ -46,7 +48,7 @@ Detects common missing-value indicators such as:
 * `-`
 * `--`
 
-Available treatments include:
+Available treatment methods include:
 
 * N/A
 * Mean
@@ -54,57 +56,34 @@ Available treatments include:
 * Mode
 * User-specified value
 
-The system provides different recommendations depending on the column type and meaning.
-
 ### 📈 Outlier Detection
 
-Supports multiple statistical methods:
+Supports:
 
-* **IQR (Interquartile Range)** — recommended
-* **Z-Score**
-* **Modified Z-Score**
+* IQR
+* Z-Score
+* Modified Z-Score
 
-Users can:
-
-* Review detected outliers
-* Remove outlier rows
-* Replace outliers with the median
-* Cap values using Winsorization
-* Preview changes before applying them
+Users can review detected outliers and choose different treatment methods, including removal, median replacement, and Winsorization.
 
 ### 🔤 Text Formatting
 
-Standardizes text values using:
+Provides text standardization options:
 
 * Title Case
 * UPPERCASE
 * lowercase
 * Sentence case
 
-Multi-word values are preserved, for example:
+### ⬇️ Cleaned Dataset Export
 
-```text
-salt lake city
-```
-
-becomes:
-
-```text
-Salt Lake City
-```
-
-### ⬇️ Download Cleaned Dataset
-
-After cleaning, users can download the processed dataset as:
-
-```text
-InsightOS_Cleaned_Dataset.csv
-```
+Users can download the cleaned dataset as a CSV file after applying cleaning operations.
 
 ## Project Structure
 
 ```text
 InsightOS/
+├── README.md
 └── frontend/
     └── app/
         ├── about/
@@ -122,59 +101,59 @@ InsightOS/
 
 ## Technology Stack
 
-* **Next.js**
-* **React**
-* **TypeScript**
-* **Tailwind CSS**
-* **HTML5**
-* **CSS3**
+* Next.js
+* React
+* TypeScript
+* Tailwind CSS
+* HTML
+* CSS
 
-## Data Cleaning Workflow
+## Development Status
 
-```text
-Upload CSV
-    ↓
-Load Dataset
-    ↓
-Analyze Data Quality
-    ↓
-┌─────────────────────────┐
-│ Duplicate Detection     │
-│ Space Cleaning          │
-│ Missing Values          │
-│ Outlier Detection       │
-│ Text Formatting         │
-└─────────────────────────┘
-    ↓
-Preview / Apply Changes
-    ↓
-Cleaned Dataset
-    ↓
-Download CSV
-```
+InsightOS is currently **under active development**.
 
-## Current Scope
+### Completed
 
-InsightOS currently focuses on CSV-based data cleaning and preprocessing.
+* CSV upload
+* Dataset preview
+* Duplicate detection and removal
+* Extra-space detection and cleaning
+* Missing-value detection and treatment
+* Outlier detection and treatment
+* Text formatting
+* Cleaned CSV download
+* Basic dashboard interface
 
-The frontend performs the cleaning operations directly in the browser, allowing users to inspect and modify their dataset before downloading the cleaned version.
+### In Progress
 
-## Future Improvements
+* Data analysis features
+* Data visualization
+* Insights generation
+* Reporting
+* Backend integration
+* Additional dataset formats
+* UI/UX improvements
 
-Planned improvements may include:
+## Planned Features
+
+Future development may include:
 
 * Excel file support
-* Larger dataset processing
-* Data visualization
 * Automated data quality reports
+* Data visualizations
 * Statistical analysis
-* AI-powered data insights
-* Backend processing
-* User authentication and dataset history
-* Export to multiple formats
+* AI-powered insights
+* Backend data processing
+* Dataset history
+* Advanced reporting
+* Additional export formats
 
-## Author
+## Project Goal
 
-**InsightOS Project**
+The goal of InsightOS is to provide a simple and intelligent platform that makes data cleaning and preprocessing easier for users, especially those who want to prepare datasets for analysis and machine learning without manually performing every cleaning operation.
 
-Built as a data analysis and preprocessing project.
+---
+
+**Status:** 🚧 In Progress
+**Project:** InsightOS
+**Type:** Data Cleaning & Analysis Platform
